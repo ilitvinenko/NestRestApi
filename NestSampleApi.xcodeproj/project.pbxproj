@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		969715451FCAC21B00DBFF92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 969715441FCAC21B00DBFF92 /* AppDelegate.m */; };
+		969715481FCAC21B00DBFF92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 969715471FCAC21B00DBFF92 /* ViewController.m */; };
+		9697154B1FCAC21B00DBFF92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 969715491FCAC21B00DBFF92 /* Main.storyboard */; };
+		9697154D1FCAC21B00DBFF92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9697154C1FCAC21B00DBFF92 /* Assets.xcassets */; };
+		969715501FCAC21B00DBFF92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9697154E1FCAC21B00DBFF92 /* LaunchScreen.storyboard */; };
+		969715531FCAC21B00DBFF92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 969715521FCAC21B00DBFF92 /* main.m */; };
+		9697155F1FCAC2BC00DBFF92 /* Thermostat.m in Sources */ = {isa = PBXBuildFile; fileRef = 9697155E1FCAC2BC00DBFF92 /* Thermostat.m */; };
+		969715621FCAC35800DBFF92 /* NSAServiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 969715611FCAC35800DBFF92 /* NSAServiceProvider.m */; };
+		969715671FCAC73200DBFF92 /* NSANetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 969715661FCAC73200DBFF92 /* NSANetworkManager.m */; };
+		9697156D1FCACC4D00DBFF92 /* NSANetworkManager+ThermostatLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9697156C1FCACC4D00DBFF92 /* NSANetworkManager+ThermostatLoader.m */; };
+		969715731FCAD55C00DBFF92 /* NSAThermostatDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 969715721FCAD55C00DBFF92 /* NSAThermostatDataSource.m */; };
+		969715771FCAD98E00DBFF92 /* NSAThermostatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 969715761FCAD98E00DBFF92 /* NSAThermostatTableViewCell.m */; };
+		9697157A1FCB336600DBFF92 /* NSAThermostatInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 969715791FCB336600DBFF92 /* NSAThermostatInfoViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		969715401FCAC21B00DBFF92 /* NestSampleApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NestSampleApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		969715431FCAC21B00DBFF92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		969715441FCAC21B00DBFF92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		969715461FCAC21B00DBFF92 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		969715471FCAC21B00DBFF92 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9697154A1FCAC21B00DBFF92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9697154C1FCAC21B00DBFF92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9697154F1FCAC21B00DBFF92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		969715511FCAC21B00DBFF92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		969715521FCAC21B00DBFF92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9697155B1FCAC27F00DBFF92 /* NSAThermostatDataProviderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSAThermostatDataProviderProtocol.h; sourceTree = "<group>"; };
+		9697155D1FCAC2BC00DBFF92 /* Thermostat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Thermostat.h; sourceTree = "<group>"; };
+		9697155E1FCAC2BC00DBFF92 /* Thermostat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Thermostat.m; sourceTree = "<group>"; };
+		969715601FCAC35800DBFF92 /* NSAServiceProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSAServiceProvider.h; sourceTree = "<group>"; };
+		969715611FCAC35800DBFF92 /* NSAServiceProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAServiceProvider.m; sourceTree = "<group>"; };
+		969715651FCAC73200DBFF92 /* NSANetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSANetworkManager.h; sourceTree = "<group>"; };
+		969715661FCAC73200DBFF92 /* NSANetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSANetworkManager.m; sourceTree = "<group>"; };
+		9697156B1FCACC4D00DBFF92 /* NSANetworkManager+ThermostatLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSANetworkManager+ThermostatLoader.h"; sourceTree = "<group>"; };
+		9697156C1FCACC4D00DBFF92 /* NSANetworkManager+ThermostatLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSANetworkManager+ThermostatLoader.m"; sourceTree = "<group>"; };
+		9697156E1FCAD2B100DBFF92 /* ErrorCodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorCodes.h; sourceTree = "<group>"; };
+		969715711FCAD55C00DBFF92 /* NSAThermostatDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSAThermostatDataSource.h; sourceTree = "<group>"; };
+		969715721FCAD55C00DBFF92 /* NSAThermostatDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAThermostatDataSource.m; sourceTree = "<group>"; };
+		969715751FCAD98E00DBFF92 /* NSAThermostatTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSAThermostatTableViewCell.h; sourceTree = "<group>"; };
+		969715761FCAD98E00DBFF92 /* NSAThermostatTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAThermostatTableViewCell.m; sourceTree = "<group>"; };
+		969715781FCB336600DBFF92 /* NSAThermostatInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSAThermostatInfoViewController.h; sourceTree = "<group>"; };
+		969715791FCB336600DBFF92 /* NSAThermostatInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAThermostatInfoViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9697153D1FCAC21B00DBFF92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		969715371FCAC21B00DBFF92 = {
+			isa = PBXGroup;
+			children = (
+				969715421FCAC21B00DBFF92 /* NestSampleApi */,
+				969715411FCAC21B00DBFF92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		969715411FCAC21B00DBFF92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				969715401FCAC21B00DBFF92 /* NestSampleApi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		969715421FCAC21B00DBFF92 /* NestSampleApi */ = {
+			isa = PBXGroup;
+			children = (
+				9697156F1FCAD3D100DBFF92 /* UI */,
+				9697155C1FCAC28400DBFF92 /* Models */,
+				9697155A1FCAC24900DBFF92 /* Networking */,
+				969715591FCAC23100DBFF92 /* DataProviders */,
+				969715431FCAC21B00DBFF92 /* AppDelegate.h */,
+				969715441FCAC21B00DBFF92 /* AppDelegate.m */,
+				969715491FCAC21B00DBFF92 /* Main.storyboard */,
+				9697154C1FCAC21B00DBFF92 /* Assets.xcassets */,
+				9697154E1FCAC21B00DBFF92 /* LaunchScreen.storyboard */,
+				969715511FCAC21B00DBFF92 /* Info.plist */,
+				969715521FCAC21B00DBFF92 /* main.m */,
+			);
+			path = NestSampleApi;
+			sourceTree = "<group>";
+		};
+		969715591FCAC23100DBFF92 /* DataProviders */ = {
+			isa = PBXGroup;
+			children = (
+				9697155B1FCAC27F00DBFF92 /* NSAThermostatDataProviderProtocol.h */,
+				969715601FCAC35800DBFF92 /* NSAServiceProvider.h */,
+				969715611FCAC35800DBFF92 /* NSAServiceProvider.m */,
+				9697156E1FCAD2B100DBFF92 /* ErrorCodes.h */,
+			);
+			path = DataProviders;
+			sourceTree = "<group>";
+		};
+		9697155A1FCAC24900DBFF92 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				969715651FCAC73200DBFF92 /* NSANetworkManager.h */,
+				969715661FCAC73200DBFF92 /* NSANetworkManager.m */,
+				9697156B1FCACC4D00DBFF92 /* NSANetworkManager+ThermostatLoader.h */,
+				9697156C1FCACC4D00DBFF92 /* NSANetworkManager+ThermostatLoader.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9697155C1FCAC28400DBFF92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9697155D1FCAC2BC00DBFF92 /* Thermostat.h */,
+				9697155E1FCAC2BC00DBFF92 /* Thermostat.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9697156F1FCAD3D100DBFF92 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				969715741FCAD98000DBFF92 /* Cells */,
+				969715701FCAD53F00DBFF92 /* DataSources */,
+				969715461FCAC21B00DBFF92 /* ViewController.h */,
+				969715471FCAC21B00DBFF92 /* ViewController.m */,
+				969715781FCB336600DBFF92 /* NSAThermostatInfoViewController.h */,
+				969715791FCB336600DBFF92 /* NSAThermostatInfoViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		969715701FCAD53F00DBFF92 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				969715711FCAD55C00DBFF92 /* NSAThermostatDataSource.h */,
+				969715721FCAD55C00DBFF92 /* NSAThermostatDataSource.m */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		969715741FCAD98000DBFF92 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				969715751FCAD98E00DBFF92 /* NSAThermostatTableViewCell.h */,
+				969715761FCAD98E00DBFF92 /* NSAThermostatTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9697153F1FCAC21B00DBFF92 /* NestSampleApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 969715561FCAC21B00DBFF92 /* Build configuration list for PBXNativeTarget "NestSampleApi" */;
+			buildPhases = (
+				9697153C1FCAC21B00DBFF92 /* Sources */,
+				9697153D1FCAC21B00DBFF92 /* Frameworks */,
+				9697153E1FCAC21B00DBFF92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NestSampleApi;
+			productName = NestSampleApi;
+			productReference = 969715401FCAC21B00DBFF92 /* NestSampleApi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		969715381FCAC21B00DBFF92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Igor Litvinenko";
+				TargetAttributes = {
+					9697153F1FCAC21B00DBFF92 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9697153B1FCAC21B00DBFF92 /* Build configuration list for PBXProject "NestSampleApi" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 969715371FCAC21B00DBFF92;
+			productRefGroup = 969715411FCAC21B00DBFF92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9697153F1FCAC21B00DBFF92 /* NestSampleApi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9697153E1FCAC21B00DBFF92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				969715501FCAC21B00DBFF92 /* LaunchScreen.storyboard in Resources */,
+				9697154D1FCAC21B00DBFF92 /* Assets.xcassets in Resources */,
+				9697154B1FCAC21B00DBFF92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9697153C1FCAC21B00DBFF92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				969715481FCAC21B00DBFF92 /* ViewController.m in Sources */,
+				969715531FCAC21B00DBFF92 /* main.m in Sources */,
+				969715621FCAC35800DBFF92 /* NSAServiceProvider.m in Sources */,
+				969715671FCAC73200DBFF92 /* NSANetworkManager.m in Sources */,
+				969715731FCAD55C00DBFF92 /* NSAThermostatDataSource.m in Sources */,
+				9697155F1FCAC2BC00DBFF92 /* Thermostat.m in Sources */,
+				9697157A1FCB336600DBFF92 /* NSAThermostatInfoViewController.m in Sources */,
+				9697156D1FCACC4D00DBFF92 /* NSANetworkManager+ThermostatLoader.m in Sources */,
+				969715771FCAD98E00DBFF92 /* NSAThermostatTableViewCell.m in Sources */,
+				969715451FCAC21B00DBFF92 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		969715491FCAC21B00DBFF92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9697154A1FCAC21B00DBFF92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9697154E1FCAC21B00DBFF92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9697154F1FCAC21B00DBFF92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		969715541FCAC21B00DBFF92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		969715551FCAC21B00DBFF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		969715571FCAC21B00DBFF92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NestSampleApi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nest.test.api.NestSampleApi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		969715581FCAC21B00DBFF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NestSampleApi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nest.test.api.NestSampleApi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9697153B1FCAC21B00DBFF92 /* Build configuration list for PBXProject "NestSampleApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				969715541FCAC21B00DBFF92 /* Debug */,
+				969715551FCAC21B00DBFF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		969715561FCAC21B00DBFF92 /* Build configuration list for PBXNativeTarget "NestSampleApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				969715571FCAC21B00DBFF92 /* Debug */,
+				969715581FCAC21B00DBFF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 969715381FCAC21B00DBFF92 /* Project object */;
+}
