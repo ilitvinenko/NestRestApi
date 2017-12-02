@@ -47,6 +47,10 @@ static NSString * const kShowThermostatInfoStoryboardId = @"ShowThermostatInfo";
     }
 }
 
+- (IBAction)didTapRefreshButton:(id)sender {
+    [self updateThermostats];
+}
+
 #pragma mark - NSAThermostatDataProviderProtocol
 
 - (void)datasource:(NSAThermostatDataSource *)source didSelect:(Thermostat *)item {

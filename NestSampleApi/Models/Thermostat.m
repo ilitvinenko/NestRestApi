@@ -14,8 +14,10 @@
 @property (nonatomic, readwrite, copy) NSString * locationId;
 @property (nonatomic, readwrite, copy) NSString * deviceId;
 @property (nonatomic, readwrite, copy) NSString * name;
-@property (nonatomic, readwrite, assign) float temperatureC;
+@property (nonatomic, readwrite, assign) float currentTemperatureC;
+@property (nonatomic, readwrite, assign) float targetTemperatureC;
 @property (nonatomic, readwrite, copy) NSString * locationName;
+@property (nonatomic, readwrite, assign) NSAThermostatMode mode;
 
 @end
 
@@ -32,11 +34,23 @@
         self.locationId = source[@"where_id"];
         self.deviceId = source[@"device_id"];
         self.name = source[@"name"];
-        self.temperatureC = [source[@"target_temperature_c"] floatValue];
+        self.currentTemperatureC = [source[@"ambient_temperature_c"] floatValue];
+        self.targetTemperatureC = [source[@"target_temperature_c"] floatValue];
         self.locationName = source[@"where_name"];
+        self.mode = [self modeForString:source[@"hvac_mode"]];
     }
     
     return self;
+}
+
+- (NSAThermostatMode)modeForString:(NSString *)source {
+    NSAThermostatMode result;
+    if ([source isEqualToString:@"heat"]) {
+        result = NSAThermostatModeHeating;
+    } else {
+        result = NSAThermostatModeEco;
+    }
+    return result;
 }
 
 - (NSString *)description {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96501D631FD2A3DC009375A4 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96501D621FD2A3DC009375A4 /* Media.xcassets */; };
+		96501D651FD2A4AC009375A4 /* NSAThermostatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96501D641FD2A4AC009375A4 /* NSAThermostatTableViewCell.xib */; };
 		969715451FCAC21B00DBFF92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 969715441FCAC21B00DBFF92 /* AppDelegate.m */; };
 		969715481FCAC21B00DBFF92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 969715471FCAC21B00DBFF92 /* ViewController.m */; };
 		9697154B1FCAC21B00DBFF92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 969715491FCAC21B00DBFF92 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96501D621FD2A3DC009375A4 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		96501D641FD2A4AC009375A4 /* NSAThermostatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSAThermostatTableViewCell.xib; sourceTree = "<group>"; };
 		969715401FCAC21B00DBFF92 /* NestSampleApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NestSampleApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		969715431FCAC21B00DBFF92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		969715441FCAC21B00DBFF92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96501D611FD2A3C3009375A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				96501D621FD2A3DC009375A4 /* Media.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		969715371FCAC21B00DBFF92 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +93,7 @@
 		969715421FCAC21B00DBFF92 /* NestSampleApi */ = {
 			isa = PBXGroup;
 			children = (
+				96501D611FD2A3C3009375A4 /* Resources */,
 				9697156F1FCAD3D100DBFF92 /* UI */,
 				9697155C1FCAC28400DBFF92 /* Models */,
 				9697155A1FCAC24900DBFF92 /* Networking */,
@@ -154,6 +167,7 @@
 			children = (
 				969715751FCAD98E00DBFF92 /* NSAThermostatTableViewCell.h */,
 				969715761FCAD98E00DBFF92 /* NSAThermostatTableViewCell.m */,
+				96501D641FD2A4AC009375A4 /* NSAThermostatTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -218,6 +232,8 @@
 			files = (
 				969715501FCAC21B00DBFF92 /* LaunchScreen.storyboard in Resources */,
 				9697154D1FCAC21B00DBFF92 /* Assets.xcassets in Resources */,
+				96501D631FD2A3DC009375A4 /* Media.xcassets in Resources */,
+				96501D651FD2A4AC009375A4 /* NSAThermostatTableViewCell.xib in Resources */,
 				9697154B1FCAC21B00DBFF92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

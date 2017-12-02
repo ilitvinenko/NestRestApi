@@ -59,7 +59,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Thermostats" id="DO4-7c-DfQ"/>
+                    <navigationItem key="navigationItem" title="Thermostats" id="DO4-7c-DfQ">
+                        <barButtonItem key="rightBarButtonItem" title="Refresh" id="1ZK-2r-1cj">
+                            <connections>
+                                <action selector="didTapRefreshButton:" destination="BYZ-38-t0r" id="OT8-k6-mH9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="noDataLabel" destination="lZl-nU-cR8" id="ggb-GS-ipo"/>
                         <outlet property="tableView" destination="Hqk-y3-EXn" id="j5N-4o-Art"/>
@@ -78,18 +84,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFH-Ei-TvP">
-                                <rect key="frame" x="16" y="87" width="98" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ambient Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFH-Ei-TvP">
+                                <rect key="frame" x="16" y="87" width="170" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="5Qo-as-s8Q"/>
-                                    <constraint firstAttribute="width" constant="98" id="Szx-z0-JdZ"/>
+                                    <constraint firstAttribute="width" constant="170" id="Szx-z0-JdZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hma-pW-YHe" userLabel="TemperatureValue">
-                                <rect key="frame" x="122" y="87" width="243" height="21"/>
+                                <rect key="frame" x="194" y="87" width="171" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="2XN-9I-xgt"/>
                                 </constraints>
@@ -135,23 +141,71 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XG9-x4-zFu">
+                                <rect key="frame" x="16" y="227" width="151" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="edU-m7-kPN"/>
+                                    <constraint firstAttribute="height" constant="21" id="ggd-P0-O8g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfV-oI-Alu">
+                                <rect key="frame" x="16" y="277" width="48" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="9Pi-a6-scK"/>
+                                    <constraint firstAttribute="height" constant="21" id="W7v-UD-4YG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1S-G4-hgB">
+                                <rect key="frame" x="175" y="227" width="184" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="nr8-D8-3SW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Up-Wg-Fjw">
+                                <rect key="frame" x="72" y="277" width="287" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="xDz-xp-gKr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="e1N-TX-PrM" firstAttribute="top" secondItem="LcD-s3-fnh" secondAttribute="bottom" constant="30" id="2zc-h7-1Eo"/>
+                            <constraint firstItem="4Up-Wg-Fjw" firstAttribute="leading" secondItem="SfV-oI-Alu" secondAttribute="trailing" constant="8" id="5ZL-VB-90G"/>
                             <constraint firstItem="5GN-U0-hH9" firstAttribute="trailing" secondItem="LcD-s3-fnh" secondAttribute="trailing" constant="10" id="CXG-M9-Yd6"/>
                             <constraint firstItem="hma-pW-YHe" firstAttribute="top" secondItem="5GN-U0-hH9" secondAttribute="top" constant="23" id="EQc-6u-W4x"/>
                             <constraint firstItem="dG2-eO-oI9" firstAttribute="top" secondItem="N6W-KB-xqP" secondAttribute="bottom" constant="30" id="LBb-Te-grr"/>
+                            <constraint firstItem="SfV-oI-Alu" firstAttribute="leading" secondItem="5GN-U0-hH9" secondAttribute="leading" constant="16" id="LzR-Fv-dEw"/>
+                            <constraint firstItem="5GN-U0-hH9" firstAttribute="trailing" secondItem="4Up-Wg-Fjw" secondAttribute="trailing" constant="16" id="P4r-nG-t4g"/>
                             <constraint firstItem="TFH-Ei-TvP" firstAttribute="leading" secondItem="5GN-U0-hH9" secondAttribute="leading" constant="16" id="QF2-Ga-UNp"/>
+                            <constraint firstItem="SfV-oI-Alu" firstAttribute="top" secondItem="XG9-x4-zFu" secondAttribute="bottom" constant="29" id="TEm-y9-x2v"/>
                             <constraint firstItem="hma-pW-YHe" firstAttribute="leading" secondItem="TFH-Ei-TvP" secondAttribute="trailing" constant="8" id="XH2-R3-Acg"/>
                             <constraint firstItem="5GN-U0-hH9" firstAttribute="trailing" secondItem="hma-pW-YHe" secondAttribute="trailing" constant="10" id="Yhc-dJ-ovT"/>
+                            <constraint firstItem="5GN-U0-hH9" firstAttribute="trailing" secondItem="C1S-G4-hgB" secondAttribute="trailing" constant="16" id="Yrz-me-i3h"/>
+                            <constraint firstItem="C1S-G4-hgB" firstAttribute="leading" secondItem="XG9-x4-zFu" secondAttribute="trailing" constant="8" id="bTv-ag-7yO"/>
+                            <constraint firstItem="XG9-x4-zFu" firstAttribute="leading" secondItem="5GN-U0-hH9" secondAttribute="leading" constant="16" id="cdM-nU-093"/>
                             <constraint firstItem="5GN-U0-hH9" firstAttribute="trailing" secondItem="e1N-TX-PrM" secondAttribute="trailing" constant="10" id="cuM-H9-w4o"/>
                             <constraint firstItem="LcD-s3-fnh" firstAttribute="leading" secondItem="N6W-KB-xqP" secondAttribute="trailing" constant="8" id="d4V-Mu-3dU"/>
                             <constraint firstItem="TFH-Ei-TvP" firstAttribute="top" secondItem="5GN-U0-hH9" secondAttribute="top" constant="23" id="dk3-s4-imT"/>
                             <constraint firstItem="LcD-s3-fnh" firstAttribute="top" secondItem="hma-pW-YHe" secondAttribute="bottom" constant="23" id="fvL-il-mVo"/>
+                            <constraint firstItem="XG9-x4-zFu" firstAttribute="top" secondItem="dG2-eO-oI9" secondAttribute="bottom" constant="24" id="gvV-Gv-9Bm"/>
                             <constraint firstItem="N6W-KB-xqP" firstAttribute="top" secondItem="TFH-Ei-TvP" secondAttribute="bottom" constant="23" id="h0s-vF-szU"/>
                             <constraint firstItem="dG2-eO-oI9" firstAttribute="leading" secondItem="5GN-U0-hH9" secondAttribute="leading" constant="16" id="nYJ-3m-Ewj"/>
                             <constraint firstItem="e1N-TX-PrM" firstAttribute="leading" secondItem="dG2-eO-oI9" secondAttribute="trailing" constant="8" id="qt9-Sa-GTM"/>
+                            <constraint firstItem="4Up-Wg-Fjw" firstAttribute="top" secondItem="XG9-x4-zFu" secondAttribute="bottom" constant="29" id="t9G-k2-84W"/>
+                            <constraint firstItem="C1S-G4-hgB" firstAttribute="top" secondItem="e1N-TX-PrM" secondAttribute="bottom" constant="24" id="tH8-mu-Vdl"/>
                             <constraint firstItem="N6W-KB-xqP" firstAttribute="leading" secondItem="5GN-U0-hH9" secondAttribute="leading" constant="16" id="uV0-ib-7dx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5GN-U0-hH9"/>
@@ -159,6 +213,8 @@
                     <connections>
                         <outlet property="humidityValueLabel" destination="e1N-TX-PrM" id="48B-fk-vNe"/>
                         <outlet property="locationValueLabel" destination="LcD-s3-fnh" id="Kd4-6b-Myy"/>
+                        <outlet property="modeLabel" destination="4Up-Wg-Fjw" id="Smg-EO-0g2"/>
+                        <outlet property="targetTemperatureLabel" destination="C1S-G4-hgB" id="XWn-Sa-ebm"/>
                         <outlet property="temperatureValueLabel" destination="hma-pW-YHe" id="qbm-SW-I1o"/>
                     </connections>
                 </viewController>

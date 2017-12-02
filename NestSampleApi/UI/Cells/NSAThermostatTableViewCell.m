@@ -8,14 +8,28 @@
 
 #import "NSAThermostatTableViewCell.h"
 
+@interface NSAThermostatTableViewCell()
+
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *temperatureLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *modeImageView;
+
+
+@end
+
 @implementation NSAThermostatTableViewCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+}
 
 + (NSString *)identifier{
     return [NSString stringWithFormat:@"k%@Identifier", NSStringFromClass(self.class)];
 }
 
 + (void)registerIn:(UITableView *)tableView {
-    [tableView registerClass:[NSAThermostatTableViewCell class] forCellReuseIdentifier:self.identifier];
+    [tableView registerNib:[UINib nibWithNibName:NSStringFromClass(self.class) bundle:nil] forCellReuseIdentifier:[NSAThermostatTableViewCell identifier]];
 }
 
 - (void)setItem:(Thermostat *)item {
@@ -24,8 +38,20 @@
 }
 
 - (void)updateUi {
-    self.textLabel.text = self.item.name;
-    self.detailTextLabel.text = self.item.locationName;
+    self.nameLabel.text = self.item.name;
+    self.temperatureLabel.text = [NSString stringWithFormat:@"%2.0f", self.item.currentTemperatureC];
+    
+    NSString *imageName = nil;
+    switch (self.item.mode) {
+        case NSAThermostatModeEco:
+            imageName = @"eco";
+            break;
+        case NSAThermostatModeHeating:
+            imageName = @"heat";
+            break;
+    }
+    
+    self.modeImageView.image = [UIImage imageNamed:imageName];
 }
 
 @end
